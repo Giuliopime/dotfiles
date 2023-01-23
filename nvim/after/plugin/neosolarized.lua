@@ -4,7 +4,7 @@ n = require('neosolarized').setup({
 })
 
 -- Sometimes I don't like them red :>
--- n.Group.new('Special', n.colors.base0)
+n.Group.new('Special', n.colors.base0)
 
 n.Color.new('black', '#000000')
 n.Group.new('CursorLineNr', n.colors.yellow, n.colors.black, n.styles.NONE, n.colors.base1)

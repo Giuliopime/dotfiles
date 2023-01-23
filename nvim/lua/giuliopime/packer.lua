@@ -71,4 +71,5 @@ return require('packer').startup(function(use)
  use 'tjdevries/colorbuddy.vim'
  use 'svrana/neosolarized.nvim'
  use 'norcalli/nvim-colorizer.lua'
+ use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 end)

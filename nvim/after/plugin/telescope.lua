@@ -16,8 +16,12 @@ require("telescope").setup {
 }
 
 require('telescope').load_extension "file_browser"
+local tel = require('telescope')
+tel.load_extension "file_browser"
+tel.load_extension "flutter"
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>pf', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fb', "<Cmd>Telescope file_browser<CR>", { noremap = true })
+vim.keymap.set('n', '<leader>fc', "<Cmd>Telescope flutter commands<CR>", { noremap = true })
