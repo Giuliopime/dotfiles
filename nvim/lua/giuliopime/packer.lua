@@ -59,14 +59,15 @@ return require('packer').startup(function(use)
  use 'hrsh7th/cmp-vsnip'
  use 'hrsh7th/vim-vsnip-integ'
  use 'windwp/nvim-ts-autotag'
- use {
-    "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
- }
+ -- use {
+    -- "windwp/nvim-autopairs",
+    -- config = function() require("nvim-autopairs").setup {} end
+ -- }
 
  use 'nvim-tree/nvim-web-devicons'
  -- use({ "ellisonleao/gruvbox.nvim", config = function() vim.cmd('colorscheme gruvbox') end })
  use 'ellisonleao/gruvbox.nvim'
+ use {'nyoom-engineering/oxocarbon.nvim'}
 
  use 'tjdevries/colorbuddy.vim'
  use 'svrana/neosolarized.nvim'

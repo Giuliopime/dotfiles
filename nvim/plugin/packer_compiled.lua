@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/giuliopime/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/giuliopime/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/giuliopime/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/giuliopime/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/giuliopime/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "C:\\Users\\giuli\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\giuli\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\giuli\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\giuli\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\giuli\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,159 +76,154 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/cmp-path",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-vsnip"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["colorbuddy.vim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/colorbuddy.vim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorbuddy.vim",
     url = "https://github.com/tjdevries/colorbuddy.vim"
   },
   ["flutter-tools.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\flutter-tools.nvim",
     url = "https://github.com/akinsho/flutter-tools.nvim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lspsaga.nvim"] = {
     config = { "\27LJ\2\n`\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21symbol_in_winbar\1\0\0\1\0\1\venable\1\nsetup\flspsaga\frequire\0" },
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["neosolarized.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neosolarized.nvim",
     url = "https://github.com/svrana/neosolarized.nvim"
-  },
-  ["nvim-autopairs"] = {
-    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
-    loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-autotag"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["presence.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
   },
   ["telescope-emoji"] = {
     config = { "\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\nemoji\19load_extension\14telescope\frequire\0" },
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/telescope-emoji",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-emoji",
     url = "https://github.com/xiyaowong/telescope-emoji"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-emoji"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/vim-emoji",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-emoji",
     url = "https://github.com/junegunn/vim-emoji"
   },
   ["vim-vsnip"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
   },
   ["vim-vsnip-integ"] = {
     loaded = true,
-    path = "/Users/giuliopime/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ",
+    path = "C:\\Users\\giuli\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip-integ",
     url = "https://github.com/hrsh7th/vim-vsnip-integ"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 -- Config for: lspsaga.nvim
 time([[Config for lspsaga.nvim]], true)
 try_loadstring("\27LJ\2\n`\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21symbol_in_winbar\1\0\0\1\0\1\venable\1\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
