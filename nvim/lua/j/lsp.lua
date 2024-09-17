@@ -1,4 +1,4 @@
-local lsp = require('lsp-zero').preset({})
+local lsp = require('lsp-zero')
 
 local on_attach = function(_, bufnr)
   -- see :help lsp-zero-keybindings
