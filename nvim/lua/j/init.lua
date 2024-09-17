@@ -1,6 +1,8 @@
 require("j.set")
 require("j.remap")
-require("j.packer")
+require("j.lazy")
+require("j.lsp")
+require("j.theme")
 
 local has = function(x)
    return vim.fn.has(x) == 1
