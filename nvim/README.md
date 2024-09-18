@@ -21,9 +21,9 @@
 - `gr` list references 
 - `gs` display signature info
 - ` u` open undo tree 
-- ` a` add to harpoon 
+<!-- - ` a` add to harpoon 
 - ` e` toggle quick menu harpoon 
-- ` 1`, ` 2`, ` 3`, ` 4` harpoon 1/2/3/4th file 
+- ` 1`, ` 2`, ` 3`, ` 4` harpoon 1/2/3/4th file  -->
 - `` 
 - `` 
 - `` 
