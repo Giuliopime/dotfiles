@@ -46,3 +46,4 @@ autoload -U +X bashcompinit && bashcompinit
 
 # kubectl autocompletion
 source <(kubectl completion zsh)
+
