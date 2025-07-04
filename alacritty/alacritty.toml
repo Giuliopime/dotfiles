@@ -4,7 +4,7 @@ dynamic_title = true
 opacity = 0.9
 
 [font]
-normal = { family = "JetBrains Mono", style = "Regular" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 size = 15
 
 [colors]
