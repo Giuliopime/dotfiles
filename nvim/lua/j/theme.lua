@@ -4,7 +4,7 @@ vim.g.gruvbox_contrast_light='hard'
 vim.g.gruvbox_contrast_dark='hard'
 -- vim.cmd('colorscheme gruvbox')
 -- vim.cmd('colorscheme solarized-osaka')
-vim.cmd('colorscheme oxocarbon')
+vim.cmd('colorscheme gruvbox')
 
 -- local n = require('neosolarized').setup({
 --  comment_italics = true,
