@@ -1,7 +1,6 @@
-require("j.set")
-require("j.remap")
+require("j.options")
+require("j.keymaps")
 require("j.lazy")
-require("j.lsp")
 require("j.theme")
 
 local has = function(x)
