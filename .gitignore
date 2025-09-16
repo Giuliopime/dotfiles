@@ -1,4 +1,6 @@
 gcloud/
+hcloud/
+packer/
 github-copilot/
 gh/
 jgit/
