@@ -30,19 +30,19 @@ return {
     servers = {
       lua_ls = {
         settings = {
-          Lua = {
-            workspace = { checkThirdParty = false },
+          lua = {
+            workspace = { checkthirdparty = false },
             telemetry = { enable = false },
           },
         },
       },
       pyright = {},
+      terraformls = {}
     },
   },
   config = function(_, opts)
     -- blink.cmp supports additional completion capabilities, so broadcast
     -- that to servers.
-    local lspconfig = require("lspconfig")
     local capabilities = require("blink.cmp").get_lsp_capabilities()
 
     for name, conf in pairs(opts.servers) do
@@ -55,13 +55,13 @@ return {
         end
       end
 
-      lspconfig[name].setup({
+      vim.lsp.config(name, {
         capabilities = capabilities,
         settings = conf.settings,
         on_attach = function(client, bufnr)
           local _, err = pcall(on_attach, client, bufnr)
           if err then
-            vim.notify("[LSP on_attach] " .. err, vim.log.levels.ERROR)
+            vim.notify("[lsp on_attach] " .. err, vim.log.levels.error)
           end
         end,
       })

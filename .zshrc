@@ -29,6 +29,7 @@ plugins=(
 
 alias vim=nvim
 alias vi="nvim ."
+alias timeout=gtimeout
 
 source $ZSH/oh-my-zsh.sh
 
@@ -44,7 +45,9 @@ export ANDROID_HOME="/Users/j/Library/Android/sdk"
 
 autoload -U +X bashcompinit && bashcompinit
 
-# kubectl autocompletion
+# kubectl configs & autocompletion
+alias k=kubectl
+export KUBECONFIG="${HOME}/.kube/astro-config:${HOME}/.kube/gport-config"
 source <(kubectl completion zsh)
 
 

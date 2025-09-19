@@ -68,6 +68,10 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.apple.mail'
     run = 'move-node-to-workspace comms'
 
+[[on-window-detected]]
+    if.app-id = 'org.alacritty'
+    run = 'move-node-to-workspace term'
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
@@ -156,7 +160,10 @@ automatically-unhide-macos-hidden-apps = false
     alt-9 = 'workspace 9'
     alt-a = 'workspace ai'
     alt-c = 'workspace comms'
+    alt-d = 'workspace data'
+    alt-e = 'workspace editor'
     alt-s = 'workspace safari'
+    alt-q = 'workspace term'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -171,7 +178,10 @@ automatically-unhide-macos-hidden-apps = false
 
     alt-shift-a = 'move-node-to-workspace ai'
     alt-shift-c = 'move-node-to-workspace comms'
+    alt-shift-d = 'move-node-to-workspace data'
+    alt-shift-e = 'move-node-to-workspace editor'
     alt-shift-s = 'move-node-to-workspace safari'
+    alt-shift-q = 'move-node-to-workspace term'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
