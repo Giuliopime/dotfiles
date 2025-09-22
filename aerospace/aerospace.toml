@@ -72,6 +72,10 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'org.alacritty'
     run = 'move-node-to-workspace term'
 
+[[on-window-detected]]
+    if.app-id = 'com.anthropic.claudefordesktop'
+    run = 'move-node-to-workspace ai'
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
@@ -163,7 +167,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-d = 'workspace data'
     alt-e = 'workspace editor'
     alt-s = 'workspace safari'
-    alt-q = 'workspace term'
+    alt-x = 'workspace term'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -181,7 +185,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-d = 'move-node-to-workspace data'
     alt-shift-e = 'move-node-to-workspace editor'
     alt-shift-s = 'move-node-to-workspace safari'
-    alt-shift-q = 'move-node-to-workspace term'
+    alt-shift-x = 'move-node-to-workspace term'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
