@@ -9,7 +9,7 @@ HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
 
-export PATH="/bin:/Users/j/scripts:/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}:/Users/j/Library/Application Support/JetBrains/Toolbox/scripts";
+export PATH="/bin:/Users/j/.config/scripts:/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}:/Users/j/Library/Application Support/JetBrains/Toolbox/scripts";
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
@@ -31,6 +31,10 @@ alias vim=nvim
 alias vi="nvim ."
 alias timeout=gtimeout
 
+alias ga="git add ."
+alias gc="git commit -m "
+alias gp="git push"
+
 source $ZSH/oh-my-zsh.sh
 
 PROMPT='%{$fg[green]%}%c%{$reset_color%}$(git_prompt_info) %(!.#.>) '
@@ -47,7 +51,8 @@ autoload -U +X bashcompinit && bashcompinit
 
 # kubectl configs & autocompletion
 alias k=kubectl
-export KUBECONFIG="${HOME}/.kube/astro-config:${HOME}/.kube/gport-config"
+# export KUBECONFIG="${HOME}/.kube/astro-config:${HOME}/.kube/gport-config"
+export KUBECONFIG="${HOME}/.kube/kubeconfig"
 source <(kubectl completion zsh)
 
 
@@ -60,3 +65,11 @@ if [ -f '/Users/j/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Use
 
 
 . "$HOME/.local/bin/env"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"

@@ -26,6 +26,7 @@ return {
     "williamboman/mason.nvim"
   },
   opts = {
+    -- locally installed via mason: ~/.local/share/nvim/mason/bin
     -- names: https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#pyright
     servers = {
       lua_ls = {
@@ -37,7 +38,12 @@ return {
         },
       },
       pyright = {},
-      terraformls = {}
+      terraformls = {},
+      html_lsp = {},
+      tailwindcss = {},
+      ts_ls = {},
+      cssls = {},
+      html = {}
     },
   },
   config = function(_, opts)
@@ -65,6 +71,8 @@ return {
           end
         end,
       })
+
+      vim.lsp.enable(name)
     end
   end,
 }

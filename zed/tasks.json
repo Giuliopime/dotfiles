@@ -1,0 +1,19 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+//
+// Example:
+[
+  {
+    "label": "SwiftBuild",
+    "command": "xcede build",
+    "allow_concurrent_runs": false,
+    "reveal": "no_focus",
+    "hide": "never",
+  },
+  {
+    "label": "SwiftRun",
+    "command": "xcede buildrun",
+    "allow_concurrent_runs": false,
+    "reveal": "no_focus",
+    "hide": "never",
+  },
+]

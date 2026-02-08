@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Check if a length argument is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <length>"
+  exit 1
+fi
+
+# Length of the random string
+length=$1
+
+# Generate a random string of the specified length
+random_string=$(openssl rand -base64 $((length * 3 / 4 + 1)) | tr -dc 'A-Za-z0-9' | head -c $length)
+
+# Print the random string
+echo "$random_string"
