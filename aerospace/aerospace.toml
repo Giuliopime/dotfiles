@@ -195,6 +195,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-c = 'workspace comms'
     alt-d = 'workspace data'
     alt-e = 'workspace editor'
+    alt-f = 'workspace files'
     alt-s = 'workspace safari'
     alt-x = 'workspace term'
 
@@ -213,6 +214,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-c = 'move-node-to-workspace comms'
     alt-shift-d = 'move-node-to-workspace data'
     alt-shift-e = 'move-node-to-workspace editor'
+    alt-shift-f = 'move-node-to-workspace files'
     alt-shift-s = 'move-node-to-workspace safari'
     alt-shift-x = 'move-node-to-workspace term'
 

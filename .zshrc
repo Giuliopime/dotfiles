@@ -9,7 +9,7 @@ HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
 
-export PATH="/bin:/Users/j/.config/scripts:/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}:/Users/j/Library/Application Support/JetBrains/Toolbox/scripts";
+export PATH="/bin:/Users/j/.config/scripts:/Users/j/scripts:/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}:/Users/j/Library/Application Support/JetBrains/Toolbox/scripts";
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
@@ -34,6 +34,8 @@ alias timeout=gtimeout
 alias ga="git add ."
 alias gc="git commit -m "
 alias gp="git push"
+
+alias tf="terraform"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,12 +66,15 @@ if [ -f '/Users/j/Developer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/j/D
 if [ -f '/Users/j/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/j/Developer/google-cloud-sdk/completion.zsh.inc'; fi
 
 
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init - zsh)"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$PATH"

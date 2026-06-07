@@ -6,3 +6,8 @@ gh/
 jgit/
 .DS_Store
 lazy-lock.json
+.idea
+opencode/
+tanstack/
+argocd/
+cagent/

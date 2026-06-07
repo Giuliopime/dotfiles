@@ -7,8 +7,29 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false,
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "show_edit_predictions": true,
   "autosave": "on_focus_change",
@@ -16,6 +37,7 @@
     "git_diff": false,
   },
   "agent": {
+    "dock": "right",
     "default_profile": "ask",
     "default_model": {
       "provider": "google",
@@ -28,11 +50,14 @@
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "theme": {
-    "mode": "dark",
-    "light": "Xcode Classic Light",
-    "dark": "Fleet Dark",
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Gruvbox Dark Hard",
   },
   "languages": {
+    "Kotlin": {
+      "language_servers": ["kotlin-lsp"],
+    },
     "Swift": {
       "format_on_save": "on",
       "formatter": {
